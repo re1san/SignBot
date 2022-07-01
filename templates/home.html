@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p class="desc">Convert Audio or Text to<br>Sign Language in One Go!</p>
+<video width="400" height="300" class="center" autoplay loop>
+  <source src= "{% static 'Hello.mp4' %}" type="video/mp4">
+  Your web browser does not support the video.
+</video>
+	<div class="form-style" align="middle" >
+	<a href="{% url 'animation' %}"><button class="button">Get Started</button></a>
+	</div>
+{% endblock %}

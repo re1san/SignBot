@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- <h2>VERSION 1.0.0</h2>
+ 	<hr> -->
+	<h2 class="about-text">SignBot is a web-based system specially designed for hearing impaired and speech impaired people. This system takes live audio speech recording or text as input and displays the relevant Indian Sign Language (ISL) animations as output.<br> Our app focuses on making life easier for disabled people so that they can also get involved in all the conversations and bring normalcy to the life of all the people.<br> It will help people impaired of hearing or impaired of speaking by converting speech/text to sign language animations through an animated character.</h2>
+	<video width="350" height="260" class="center" autoplay loop>
+		<source src= "{% static 'Bye.mp4' %}" type="video/mp4">
+		Your web browser does not support the video.
+	</video>
+	<!-- <hr> -->
+ 	<!-- <h2>Our Creator Team:</h2>
+ 	<hr>
+ 	<ul class="td">
+		<li>JIGAR GAJJAR</li>
+		<li>ASHISH BAVALIYA</li>
+		<li>DHAIRYA GADANI</li>
+ 		<li>NILKANTH PATADIYA</li>
+  	</ul>
+	<hr>
+	<p class="td">Thank you, For visiting our website</p> -->
+{% endblock %}
